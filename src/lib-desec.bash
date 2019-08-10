@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 #
 # SPDX-License-Identifier: MIT
 #
@@ -39,7 +40,7 @@ desec_init_env() {
 desec_json_data() {
     local -r var_name=$1
 
-    IFS='\n' read -r -d '' "$var_name" || true
+    IFS=$'\n' read -r -d '' "$var_name" || true
 }
 
 desec_init_file() {
